@@ -4,7 +4,7 @@ $uniqid = $_GET['id'];
 
 
 if(empty($uniqid)){
-    header("Location:https://hubtut.com/lost");
+    header("Location:your_404_error_page");
 }else{
     if(checkIfURLExists($db,$uniqid)==false){
         header("Location:https://hubtut.com/lost");
